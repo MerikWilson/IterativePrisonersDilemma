@@ -18,9 +18,9 @@ def move(my_history, their_history, my_score, their_score):
     Returns 'c' or 'b'. 
     '''
     collude_count = 0
-    if my_score - 200 < their_score:
+    if len(their_history) == 'c':
         return 'b'
-    if str(their_history) == 'c':
+    if my_score - 200 < their_score:
         return 'b'
     else:
         if their_history[-1] == 'c':
