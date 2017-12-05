@@ -29,7 +29,7 @@ def move(my_history, their_history, my_score, their_score):
                     collude_count += 1
                     collude_percent = collude_count/len(their_history)
                     if collude_percent <= .85:
-                        return 'c'
+                        return 'b'
                     else:
                         return 'b'
                 else:
