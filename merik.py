@@ -19,11 +19,11 @@ def move(my_history, their_history, my_score, their_score):
     '''
     collude_count = 0
     if len(their_history) == 'ccc':
-        return 'b'
-    if my_score - 200 < their_score:
+        return 'c'
+    if my_score - 100 < their_score:
         return 'b'
     else:
-        if their_history[-1] == 'ccc':
+        if their_history[-1] == 'cbc':
             for i in their_history:
                 if i == 'c':
                     collude_count += 1
